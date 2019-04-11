@@ -4,7 +4,9 @@
 	"description": "Server Testing Project",
 	"main": "server.js",
 	"scripts": {
-		"test": "jest --watch --verbose"
+		"test": "jest --watch --verbose",
+		"start": "node index.js",
+		"server": "nodemon"
 	},
 	"jest": {
 		"testEnvironment": "node"
@@ -25,7 +27,10 @@
 		"supertest": "^3.3.0"
 	},
 	"dependencies": {
+		"dotenv": "^7.0.0",
 		"express": "^4.16.4",
-		"knex": "^0.16.3"
+		"knex": "^0.16.3",
+		"nodemon": "^1.18.11",
+		"sqlite3": "^4.0.6"
 	}
 }
